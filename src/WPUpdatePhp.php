@@ -83,13 +83,13 @@ class WPUpdatePhp {
 	}
 
 	public function minimum_admin_notice() {
-		echo '<div class="error">';
+		echo '<div class="error notice is-dismissible">';
 		echo '<p>Unfortunately, this plugin can not run on PHP versions older than '. $this->minimum_version .'. Read more information about <a href="http://www.wpupdatephp.com/update/">how you can update</a>.</p>';
 		echo '</div>';
 	}
 
 	public function recommended_admin_notice() {
-		echo '<div class="error">';
+		echo '<div class="error notice is-dismissible">';
 		echo '<p>This plugin recommends a PHP versions higher than '. $this->recommended_version .'. Read more information about <a href="http://www.wpupdatephp.com/update/">how you can update</a>.</p>';
 		echo '</div>';
 	}
